@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+body{
+    background-color: #191816;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.logo{
+    margin-top: 30px;
+}
+
+form{
+    background-color: #24221f;
+    margin-top: 150px;
+    margin-right: 50px;
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+}
+.title{
+    padding-top: 50px;
+    margin-left: 100px;
+    color: #d4ccb6;
+}
+.title p{
+    color: #afb6c2;
+    font-size: 20px;
+}
+
+.email{
+    margin-top: 20px;
+}
+
+.email label{
+    margin-left: 100px;
+    font-size: 20px;
+    color: #afb6c2;
+}
+
+.email input{
+    margin-left: 100px;
+    width: 320px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #afb6c2;
+}
+.email input:hover{
+    border: 2px solid #ffc632;
+}
+
+.senha{
+    margin-top: 20px;
+}
+
+.senha label{
+    margin-left: 100px;
+    font-size: 20px;
+    color: #afb6c2;
+}
+
+.senha input{
+    margin-left: 100px;
+    width: 320px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #afb6c2;
+}
+.senha input:hover{
+    border: 2px solid #ffc632;
+}
+
+.checkbox{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.checkbox input{
+    margin-left: 100px;
+    font-size: 40px;
+}
+
+.checkbox label{
+    color: #afb6c2;
+    font-size: 18px;
+}
+
+.checkbox a{
+    text-decoration: none;
+    color: #ffc632;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-left: 60px;
+}
+
+button{
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 320px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #191816;
+    background-color: #ffc632;
+}
+
+.registre-se{
+    margin-top: 15px;
+    margin-left: 160px;
+    color: #ffc632;
+}
+.registre-se a{
+    color: #ffc632;
+    margin-left: 5px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.mobile{
+    display: none;
+}
+
+.desktop{
+    margin-top: 50px;
+    border-radius: 10px;
+    height: 965px;
+}
+
+@media (max-width: 1400px){
+    .box{
+        width: 1000px;
+        margin-left: 150px;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        margin-top: 250px;
+        width: 500px;
+        height: 500px;
+        border-radius: 10px;
+    }
+    form{
+        margin-top: 185px;
+    }
+}
+@media (max-width: 1200px) {
+    .box{
+        margin-left: 50px;
+    }
+}
+@media (max-width: 1100px) {
+    .mobile{
+        display: none;
+    }
+    .box{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .title{
+        margin-bottom: 0px;
+    }
+}
